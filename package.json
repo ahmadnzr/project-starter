@@ -22,7 +22,9 @@
   },
   "prettier": "@vercel/style-guide/prettier",
   "dependencies": {
+    "@ant-design/cssinjs": "^1.18.1",
     "@next/eslint-plugin-next": "^14.0.4",
+    "antd": "^5.12.2",
     "next": "13.5.6",
     "react": "^18",
     "react-dom": "^18"
