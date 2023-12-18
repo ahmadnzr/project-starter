@@ -49,6 +49,9 @@ module.exports = {
       },
     ],
     '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/no-unsafe-return': 'off',
+    '@typescript-eslint/no-floating-promises': 'off',
+    'react/jsx-sort-props': 'off',
     'react/function-component-definition': [
       2,
       {
