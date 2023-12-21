@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 
-import { type PostFilter } from '../types';
+import { type PostFilter } from '../utils/types';
 import { fetchPost } from '../services';
 
 export const usePostQueryHook = ({ limit, page }: PostFilter) => {

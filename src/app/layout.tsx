@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 
 import './globals.css';
 
-import { QueryProvider, StyledComponentsRegistry } from '@/commons/lib';
+import { QueryProvider, StyledComponentsRegistry } from '@/__commons/lib';
 
 const inter = Inter({ subsets: ['latin'] });
 

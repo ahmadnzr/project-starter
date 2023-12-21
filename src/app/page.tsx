@@ -5,8 +5,8 @@ import { List, Pagination, type PaginationProps, Skeleton } from 'antd';
 
 import styles from './page.module.css';
 
-import { type PostFilter } from '@/commons/types';
-import { usePostQueryHook } from '@/commons/hooks';
+import { type PostFilter } from '@/__commons/utils/types';
+import { usePostQueryHook } from '@/__commons/hooks';
 
 export default function Home() {
   const [pagination, setPagination] = useState<PostFilter>({
@@ -14,7 +14,7 @@ export default function Home() {
     limit: 5,
   });
 
-  const { data, totalData, fetchStatus, isLoading } = usePostQueryHook({
+  const { data, totalData, fetchStatus } = usePostQueryHook({
     ...pagination,
   });
 
@@ -37,7 +37,7 @@ export default function Home() {
           </List.Item>
         )}
       />
-      {!isLoading ? (
+      {data?.length ? (
         <Pagination
           current={pagination.page}
           defaultCurrent={1}
